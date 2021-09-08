@@ -13,7 +13,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Docker github actions22
+          Docker github actions paid
         </a>
       </header>
     </div>

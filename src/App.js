@@ -13,7 +13,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Docker Test
+          Docker github actions
         </a>
       </header>
     </div>

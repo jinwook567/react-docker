@@ -6,3 +6,6 @@ services:
     build: .
     ports:
       - "80:80"
+    environment:
+      - REACT_APP_KEY=THISISHI
+      - REACT_APP_KEY2

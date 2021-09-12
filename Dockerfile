@@ -17,6 +17,9 @@ RUN rm -rf /etc/nginx/conf.d
 COPY conf /etc/nginx
 COPY --from=builder /usr/src/app/build /usr/share/nginx/html
 
+#ARG REACT_APP_API_URL
+ENV REACT_APP_API_URL=HELLO
+
 EXPOSE 80
 CMD [ "nginx", "-g", "daemon off;" ]
 #CMD nginx

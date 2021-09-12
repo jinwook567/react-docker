@@ -1,7 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
+import dotenv from "dotenv";
 
 function App() {
+  dotenv.config();
+  const env = process.env.REACT_APP_API_URL;
+  console.log("env", env);
   return (
     <div className="App">
       <header className="App-header">
@@ -15,6 +19,8 @@ function App() {
         >
           Docker github actions paid test build... Success!!! wowwwww!!!
         </a>
+        <h1>{process.env.REACT_APP_API_URL}, hi</h1>
+        <h2>{process.env.REACT_APP_HI}</h2>
       </header>
     </div>
   );
